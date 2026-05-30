@@ -1,0 +1,48 @@
+{
+    "document1": {
+        "2": {
+            "parents": {}
+        },
+        "3": {
+            "parents": {}
+        }
+    },
+    "document2": {
+        "8": {
+            "parents": {}
+        },
+        "9": {
+            "parents": {
+                "document1": [
+                    "2",
+                    "3"
+                ]
+            }
+        }
+    },
+    "document3": {
+        "3": {
+            "parents": {
+                "document2": [
+                    "8"
+                ]
+            }
+        },
+        "4": {
+            "parents": {
+                "document2": [
+                    "9"
+                ]
+            }
+        }
+    },
+    "document4": {
+        "1": {
+            "parents": {
+                "document3": [
+                    "3"
+                ]
+            }
+        }
+    }
+}
