@@ -1,9 +1,13 @@
 import json
+from pathlib import Path
+
+# Папка, где лежит сам скрипт — используем как базу для путей
+BASE_DIR = Path(__file__).resolve().parent
 
 # Исходный файл — только читаем, не меняем
-INPUT_FILE = "test_json.txt"
+INPUT_FILE = BASE_DIR / "test_json.txt"
 # Файл с результатом — создаётся с нуля при каждом запуске
-OUTPUT_FILE = "test_json_V2.txt"
+OUTPUT_FILE = BASE_DIR / "test_json_V2.txt"
 
 
 def load_data():
